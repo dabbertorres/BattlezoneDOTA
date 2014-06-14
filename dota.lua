@@ -8,7 +8,14 @@ CANNON = {"minigun.odf", "at-stabber.odf", "sp-stabber.odf", "blast cannon.odf"}
 MORTAR = {"mortar.odf", "mdm.odf", "pop gun.odf", "splinter.odf"}
 ROCKET = {"shadower.odf", "hornet.odf", "rocket.odf", "comet.odf"}
 SPECIAL = {"prox mine.odf", "solar flare.odf", "mcurtain.odf", "thumper.odf"}
-
+--sandbag would be a good weapon, may need to rethink stuff
+--flash would be good too
+--maybe each vehicle has a main attack that is a cannon
+	--this cannot be upgraded/bought
+--"spells" are rockets or mortars
+	--these can be bought
+--vehicles have "uniques", which are specials
+	--these cannot be bought
 
 local teamOneBase = nil
 local teamTwoBase = nil
