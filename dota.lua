@@ -4,11 +4,12 @@ PLAYER = {handle, level, money}
 
 --data tables
 --hardpoint type = {level 1 weapon, ..., level 4 weapon}
-CANNON = {"minigun.odf", "at-stabber.odf", "sp-stabber.odf"}
+CANNON = {"minigun.odf", "at-stabber.odf", "sp-stabber.odf", "blast cannon.odf"}
 
 
-local teamOneBase
-local teamTwoBase
+
+local teamOneBase = nil
+local teamTwoBase = nil
 
 local players = {}
 
@@ -47,7 +48,6 @@ function levelUp(player)
 	--increase ammo and give full (new) ammo
 	SetMaxAmmo(player.handle, 1.2 * GetMaxAmmo(player.handle))
 	SetCurAmo(player.handle, GetMaxAmmo(player.handle))
-	
 end
 
 function respawnPlayer(player)
