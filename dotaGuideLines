@@ -1,0 +1,18 @@
+Each class (or vehicle) should have 4 weapon slots. Each slot is more or
+less equivalent to an ability in Dota. Only one (the first one) will 
+have a weapon in it at the start of the game. By leveling up, they can
+either upgrade the weapon, or get a new weapon (prolly just 4 upgrades 
+per slot).
+
+Warning System for shooting teammates
+warning variable that once it hits 3, kicks the player
+if IsAlly(me, GetWhoShotMe(me)) then
+	players[GetTeam(GetWhoShotMe(me))].warnings = players[GetTeam(GetWhoShotMe(me))].warnings + 1
+	
+	if players[GetTeam(GetWhoShotMe(me))].warnings >= 3 then
+		Kick(GetWhoShotMe(me))	--need to talk to Ken about getting this
+	end
+end
+
+Player money is scrap
+Player experience is pilots
