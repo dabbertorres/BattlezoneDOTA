@@ -5,7 +5,9 @@ PLAYER = {handle, level, money}
 --data tables
 --hardpoint type = {level 1 weapon, ..., level 4 weapon}
 CANNON = {"minigun.odf", "at-stabber.odf", "sp-stabber.odf", "blast cannon.odf"}
-
+MORTAR = {"mortar.odf", "mdm.odf", "pop gun.odf", "splinter.odf"}
+ROCKET = {"shadower.odf", "hornet.odf", "rocket.odf", "comet.odf"}
+SPECIAL = {"prox mine.odf", "solar flare.odf", "mcurtain.odf", "thumper.odf"}
 
 
 local teamOneBase = nil
