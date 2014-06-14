@@ -18,10 +18,15 @@ function newPlayer(handle)
 	player.handle = handle
 	player.level = 1
 	player.money = 0
+	
+	--initialize to 100 experience to level up
+	SetMaxPilot(GetTeam(player.handle), 100)
+	SetMaxScrap(GetTeam(player.handle), 10000)	--10,000 should be enough...
+	SetScrap(GetTeam(player.handle), 200)		--starting amount of 200
 end
 
 function levelUp(player)
-	local playerTeam = GetTeam(player.handle)
+	local playerTeam = GetTeam(player.handle)	--less function calls
 	
 	--if is not time to level up, cancel level up
 	if GetScrap(playerTeam) ~= GetMaxScrap(playerTeam) then
@@ -35,6 +40,18 @@ function levelUp(player)
 	SetMaxPilot(playerTeam, 2 * GetMaxPilot(playerTeam))
 	SetPilot(playerTeam, 0)	--player now has 0 experience
 	
+	--increase health and give full (new) health
+	SetMaxHealth(player.handle, 1.2 * GetMaxHealth(player.handle))
+	SetCurHealth(player.handle, GetMaxHealth(player.handle))
+	
+	--increase ammo and give full (new) ammo
+	SetMaxAmmo(player.handle, 1.2 * GetMaxAmmo(player.handle))
+	SetCurAmo(player.handle, GetMaxAmmo(player.handle))
+	
+end
+
+function respawnPlayer(player)
+
 end
 
 function giveExp(player)
