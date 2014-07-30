@@ -1,13 +1,13 @@
 --metatables
-ABILITY = {type, level}
-PLAYER = {handle, level, money}
+local ABILITY = {type, level}
+local PLAYER = {handle, level, money}
 
 --data tables
 --hardpoint type = {level 1 weapon, ..., level 4 weapon}
-CANNON = {"minigun.odf", "at-stabber.odf", "sp-stabber.odf", "blast cannon.odf"}
-MORTAR = {"mortar.odf", "mdm.odf", "pop gun.odf", "splinter.odf"}
-ROCKET = {"shadower.odf", "hornet.odf", "rocket.odf", "comet.odf"}
-SPECIAL = {"prox mine.odf", "solar flare.odf", "mcurtain.odf", "thumper.odf"}
+local CANNON = {"minigun.odf", "at-stabber.odf", "sp-stabber.odf", "blast cannon.odf"}
+local MORTAR = {"mortar.odf", "mdm.odf", "pop gun.odf", "splinter.odf"}
+local ROCKET = {"shadower.odf", "hornet.odf", "rocket.odf", "comet.odf"}
+local SPECIAL = {"prox mine.odf", "solar flare.odf", "mcurtain.odf", "thumper.odf"}
 --sandbag would be a good weapon, may need to rethink stuff
 --flash would be good too
 --maybe each vehicle has a main attack that is a cannon
