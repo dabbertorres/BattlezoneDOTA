@@ -150,5 +150,14 @@ function Start()
 end
 
 function Update()
-	
+	if IsHosting() then
+		if timeToSpawn then
+			spawnWave()
+		end
+		
+		--if a tower is destroyed
+		--DisplayMessage("Team "..team.."'s "..path.." was destroyed!")
+		
+		
+	end
 end
