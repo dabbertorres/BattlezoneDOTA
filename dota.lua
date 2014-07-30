@@ -73,60 +73,38 @@ end
 
 function Start()
 	--Team 1 alliances
-	--Teams 1, 2, 3, 4 are players
+	--Teams 1, 3, 5, 7 are players
 	--Team 9 is AI
-	Ally(1, 2)
 	Ally(1, 3)
-	Ally(1, 4)
+	Ally(1, 5)
+	Ally(1, 7)
 	Ally(1, 9)
 	
-	Ally(2, 1)
-	Ally(2, 3)
-	Ally(2, 4)
-	Ally(2, 9)
-	
-	Ally(3, 1)
-	Ally(3, 2)
-	Ally(3, 4)
+	Ally(3, 5)
+	Ally(3, 7)
 	Ally(3, 9)
 	
-	Ally(4, 1)
-	Ally(4, 2)
-	Ally(4, 3)
-	Ally(4, 9)
+	Ally(5, 7)
+	Ally(5, 9)
 	
-	Ally(9, 1)
-	Ally(9, 2)
-	Ally(9, 3)
-	Ally(9, 4)
+	Ally(7, 9)
 	
 	--Team 2 alliances
-	--Teams 5, 6, 7, 8 are players
+	--Teams 2, 4, 6, 8 are players
 	--Team 10 is AI
-	Ally(5, 6)
-	Ally(5, 7)
-	Ally(5, 8)
-	Ally(5, 10)
+	Ally(2, 4)
+	Ally(2, 6)
+	Ally(2, 8)
+	Ally(2, 10)
 	
-	Ally(6, 5)
-	Ally(6, 7)
+	Ally(4, 6)
+	Ally(4, 8)
+	Ally(4, 10)
+	
 	Ally(6, 8)
 	Ally(6, 10)
 	
-	Ally(7, 5)
-	Ally(7, 6)
-	Ally(7, 8)
-	Ally(7, 10)
-	
-	Ally(8, 5)
-	Ally(8, 6)
-	Ally(8, 7)
 	Ally(8, 10)
-	
-	Ally(10, 5)
-	Ally(10, 6)
-	Ally(10, 7)
-	Ally(10, 8)
 	
 	LockAllies(true)
 end
