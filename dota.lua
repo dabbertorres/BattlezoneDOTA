@@ -22,17 +22,23 @@ local teamTwoBase = nil
 
 local players = {}
 
-function newPlayer(handle)
-	local player = {}
-	setmetatable(player, PLAYER)
-	player.handle = handle
-	player.level = 1
-	player.money = 0
+function CreatePlayer(id, name, team)
+	local p = {}
+	setmetatable(p, PLAYER)
+	p.handle = GetPlayerHandle(team)
+	p.level = 1
+	p.money = 0
 	
 	--initialize to 100 experience to level up
-	SetMaxPilot(GetTeam(player.handle), 100)
-	SetMaxScrap(GetTeam(player.handle), 10000)	--10,000 should be enough...
-	SetScrap(GetTeam(player.handle), 200)		--starting amount of 200
+	SetMaxPilot(GetTeam(p.handle), 100)
+	SetMaxScrap(GetTeam(p.handle), 10000)	--10,000 should be enough...
+	SetScrap(GetTeam(p.handle), 200)		--starting amount of 200
+	
+	table.insert(p, team, players)
+end
+
+function DeletePlayer(id, name, team)
+	table.remove(players, team)
 end
 
 function levelUp(player)
