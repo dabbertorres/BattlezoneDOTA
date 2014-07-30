@@ -74,7 +74,41 @@ function giveExp(player)
 end
 
 function spawnWave()
-
+	--[[
+	--Team One AI
+	--spawn center wave
+	BuildObject(scoutODF, 9, teamOneCenterSpawn) x 3
+	BuildObject(tankODF, 9, teamOneCenterSpawn) x 2
+	BuildObject(bomberODF, 9, teamOneCenterSpawn)
+	
+	--spawn right wave
+	BuildObject(scoutODF, 9, teamOneRightSpawn) x 3
+	BuildObject(tankODF, 9, teamOneRightSpawn) x 2
+	BuildObject(bomberODF, 9, teamOneRightSpawn)
+	
+	--spawn left wave
+	BuildObject(scoutODF, 9, teamOneLeftSpawn) x 3
+	BuildObject(tankODF, 9, teamOneLeftSpawn) x 2
+	BuildObject(bomberODF, 9, teamOneLeftSpawn)
+	
+	--Team Two AI
+	--spawn center wave
+	BuildObject(scoutODF, 10, teamOneCenterSpawn) x 3
+	BuildObject(tankODF, 10, teamOneCenterSpawn) x 2
+	BuildObject(bomberODF, 10, teamOneCenterSpawn)
+	
+	--spawn right wave
+	BuildObject(scoutODF, 10, teamOneRightSpawn) x 3
+	BuildObject(tankODF, 10, teamOneRightSpawn) x 2
+	BuildObject(bomberODF, 10, teamOneRightSpawn)
+	
+	--spawn left wave
+	BuildObject(scoutODF, 10, teamOneLeftSpawn) x 3
+	BuildObject(tankODF, 10, teamOneLeftSpawn) x 2
+	BuildObject(bomberODF, 10, teamOneLeftSpawn)
+	
+	--command all to attack-move to the enemy base
+	]]
 end
 
 function Start()
